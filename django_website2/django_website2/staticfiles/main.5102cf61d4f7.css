@@ -1,0 +1,21 @@
+.navbar {
+    background: pink;
+    display: inline;
+}
+/* .tag {
+    text-align: left;
+    display: inline;
+} */
+
+.container{
+    position: relative;
+  }
+  img{
+    width: 100%;
+  }
+  .container .tag {
+    position: absolute;
+    margin:0;
+    right: 40%;
+    bottom: 35%;
+  }

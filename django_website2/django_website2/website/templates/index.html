@@ -2,12 +2,21 @@
 {% load static %}
 
 {% block main %}
+<!-- <p>{% now "Y-m-d h-i" %}</p>
 {% if username == "taichi" %}
-<h1>自分</h1>
+<h1>中村太一</h1>
 {% elif username %}
 <h1>{{username}}さんようこそ！</h1>
 {% else %}
 <h1>匿名さんようこそ！</h1>
 {% endif %}
-<img src="{% static 'welcome.jpeg' %}" />
+<p>作成者は<b id="test">aaa</b></p> -->
+<div class="container">
+    <img src="{% static 'drone_PR.jpeg' %}" width="100%" height="100%" />
+    <a href="/about" style="padding-top:10px;" class="btn btn-outline-primary tag"   >プロフィールへ</a>
+</div>
+
+
+
+
 {% endblock %}

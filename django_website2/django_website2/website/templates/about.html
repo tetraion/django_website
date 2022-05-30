@@ -2,7 +2,7 @@
 {% load humanize %}
 
 {% block main %}
-<h1>自己紹介</h1>
+<h1>プロフィール</h1>
 <h2>実績</h2>
 <p>{% now "Y-m-d h-i" %} 現在までに{{ num_services|intcomma }}個サービスを作りました</p>
 <h2>スキル</h2>
@@ -13,4 +13,19 @@
     no_list
     {% endfor %}
 </ul>
+<h2>資格</h2>
+<ul>
+    {% for license in licenses %}
+    <li>{{license}}</li>
+    {% empty %}
+    no_list
+    {% endfor %}
+</ul>
+<h3>成果物</h3>
+<p>django</p>
+<li><a href="https://website-d-scrape2.herokuapp.com/">相場検索</a></li>
+<li><a href="https://website-d-blog.herokuapp.com/">ブログ</a></li>
+<p>javascript</p>
+<li><a href="https://tetraion.github.io/practice_j2/">TODOリスト</a></li>
+<li><a href="https://tetraion.github.io/HEBI/">ヘビゲーム</a></li>
 {% endblock %}

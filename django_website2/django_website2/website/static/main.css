@@ -1,3 +1,21 @@
-.navbar {
-    background: pink;
+.navbar2 {
+    background: rgb(213, 209, 210);
+
 }
+/* .tag {
+    text-align: left;
+    display: inline;
+} */
+
+.container{
+    position: relative;
+  }
+  img{
+    width: 100%;
+  }
+  .container .tag {
+    position: absolute;
+    margin:0;
+    right: 40%;
+    bottom: 30%;
+  }
